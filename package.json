@@ -1,0 +1,27 @@
+{
+  "name": "choo-model",
+  "version": "1.0.0",
+  "description": "Experimental state management lib for choo",
+  "main": "index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "test": "standard && npm run deps && NODE_ENV=test node test",
+    "test:cov": "standard && npm run deps && NODE_ENV=test istanbul cover test.js"
+  },
+  "repository": "yoshuawuyts/choo-model",
+  "keywords": [
+    "state",
+    "choo",
+    "experiment"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "xtend": "^4.0.1"
+  },
+  "devDependencies": {
+    "dependency-check": "^2.6.0",
+    "istanbul": "^0.4.5",
+    "standard": "^8.3.0",
+    "tape": "^4.6.0"
+  }
+}
